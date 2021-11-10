@@ -1,4 +1,17 @@
 module.exports = [
+    // 「人」→「ひと」
+    {
+        message: `「$1」はひらがなで書きます err 1`,
+        expected: '$1',
+        tokens: [{
+                "word_position": 1, // 文頭
+                "surface_form": "人",
+                "pos": "名詞",
+                "pos_detail_1": "一般",
+                "_capture": "$1"
+            },
+        ]
+    },
     // ルール　助詞の連続（タイプミス）
     {
         message: `「$1$2$3」には助詞の連続があります（係助詞の連続） err 1`,

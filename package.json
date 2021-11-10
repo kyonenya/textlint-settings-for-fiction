@@ -11,7 +11,8 @@
     "writing"
   ],
   "scripts":{
-    "unit":"node test/index.js"
+    "unit":"node test/index.js",
+    "lint":"textlint index.md"
   },
   "author": "Taiyo Fujii",
   "license": "MIT",
