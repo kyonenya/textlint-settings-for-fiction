@@ -2,7 +2,7 @@ const fs = require('fs');
 var kuromoji = require('kuromoji');
 var teststring = '';
 
-fs.readFile('test/unittest.txt', 'utf-8', (err, data) => {
+fs.readFile('development/unittest.txt', 'utf-8', (err, data) => {
   if (err) throw err;
   console.log(data);
   teststring = data;
